@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naukri.com Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8fb;
+        }
+        .navbar {
+            background: #275df5;
+            color: #fff;
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .navbar .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: #eaf1fb;
+            padding: 60px 0 40px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 32px;
+        }
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            overflow: hidden;
+        }
+        .search-bar input {
+            flex: 1;
+            border: none;
+            padding: 16px;
+            font-size: 1rem;
+            outline: none;
+        }
+        .search-bar button {
+            background: #275df5;
+            color: #fff;
+            border: none;
+            padding: 0 32px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .featured-jobs {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        .featured-jobs h2 {
+            color: #275df5;
+            margin-bottom: 24px;
+        }
+        .job-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .job-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #222;
+        }
+        .company {
+            color: #275df5;
+            font-weight: 500;
+        }
+        .location {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .apply-btn {
+            margin-top: 10px;
+            background: #275df5;
+            color: #fff;
+            border: none;
+            padding: 8px 0;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .apply-btn:hover {
+            background: #183b99;
+        }
+        @media (max-width: 600px) {
+            .navbar, .navbar .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .search-bar {
+                flex-direction: column;
+            }
+            .search-bar button {
+                width: 100%;
+                padding: 16px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">naukri.com</div>
+        <div class="nav-links">
+            <a href="#">Jobs</a>
+            <a href="#">Companies</a>
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Find your dream job now</h1>
+        <p>5 lakh+ jobs for you to explore</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter skills / designations / companies">
+            <input type="text" placeholder="Location">
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="featured-jobs">
+        <h2>Featured Jobs</h2>
+        <div class="job-list">
+            <div class="job-card">
+                <div class="job-title">Software Engineer</div>
+                <div class="company">Tata Consultancy Services</div>
+                <div class="location">Bangalore, India</div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <div class="job-title">Frontend Developer</div>
+                <div class="company">Infosys</div>
+                <div class="location">Pune, India</div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <div class="job-title">Data Analyst</div>
+                <div class="company">Wipro</div>
+                <div class="location">Hyderabad, India</div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <div class="job-title">Backend Developer</div>
+                <div class="company">HCL Technologies</div>
+                <div class="location">Noida, India</div>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
